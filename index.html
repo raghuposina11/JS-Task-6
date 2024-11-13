@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        
+
+//reverse a string input: hello output : olleh
+let sttr='hello'
+sm=''
+for(i=sttr.length-1;i>=0;i--){
+    console.log(sttr[i])
+    sm+=sttr[i]
+}
+console.log(sm)
+
+
+//find a even numbers sum and odd numbers sum in an array - [23,54,67,64,46,95,98]
+arrr=[23,54,67,64,46,95,98]
+sumeven=0
+sumodd=0
+for(i=0;i<arrr.length;i++){
+    if(arrr[i]%2==0){
+        console.log(arrr[i]+'even');
+        sumeven+=arrr[i]
+    }
+    else
+    {
+         console.log(arrr[i]+'odd');
+         sumodd+=arrr[i]
+    }
+}
+    console.log('even numbers sum'+sumeven)
+    console.log('odd numbers sum'+sumodd)
+
+
+    
+    //iterate an object values and keys using for of loop
+
+    student={
+        name:'raghu',
+        age:22
+    }
+    for (var[keys,values] of Object.entries(student)){
+        console.log(keys,values);
+    }
+
+   
+    student={
+        name:'raghu',
+        age:22
+    }
+    for(let key in student){
+        if (student.hasOwnProperty(key)){
+        value=student[key];
+        console.log(key,value);
+    }
+    }
+</script>
+
+</body>
+</html>
